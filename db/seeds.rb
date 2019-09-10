@@ -8,16 +8,16 @@
 
 10.times do
     #puts "start"
-    model=Employee.create(
+    Employee.create(
         {name: Faker::Name.name.to_s,
         age: Faker::Number.number(digits: 2).to_i,
         designation: Faker::Job.title.to_s,
         company: Faker::Company.name.to_s}
     )
     #puts model
-    puts model.name
-    puts model.age
-    puts model.designation
-    puts model.company
-    puts model.save
+    #puts model.name
+    #puts model.age
+    #puts model.designation
+    #puts model.company
+    #puts model.save
 end
